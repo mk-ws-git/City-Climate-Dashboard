@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>City Climate Dashboard</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link href="https://api.mapbox.com/mapbox-gl-js/v3.2.0/mapbox-gl.css" rel="stylesheet" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>City Climate Dashboard</h1>
+
+      <form id="search-form">
+        <input id="city-input" type="text" placeholder="Search a city (e.g., Berlin)" required />
+        <button type="submit">Search</button>
+      </form>
+
+      <p id="status"></p>
+      <ul id="results"></ul>
+
+      <div id="map"></div>
+    </main>
+
+    <script src="https://api.mapbox.com/mapbox-gl-js/v3.2.0/mapbox-gl.js"></script>
+    <script src="./mapbox-token.local.js"></script>
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>

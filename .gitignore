@@ -10,6 +10,13 @@ __pycache__/
 .env
 .env.*
 
+# Node dependencies
+node_modules/
+frontend/node_modules/
+
+# Local frontend secrets
+frontend/mapbox-token.local.js
+
 # VS Code
 .vscode/
 

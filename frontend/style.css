@@ -1,0 +1,62 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: #f6f7f8;
+  color: #111;
+}
+
+.container {
+  max-width: 900px;
+  margin: 24px auto;
+  padding: 0 16px;
+}
+
+#search-form {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+#city-input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+button {
+  padding: 10px 14px;
+  border: 0;
+  border-radius: 8px;
+  background: #111;
+  color: white;
+  cursor: pointer;
+}
+
+#status {
+  min-height: 20px;
+  margin: 8px 0;
+}
+
+#results {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 12px;
+}
+
+#results li {
+  padding: 8px;
+  background: white;
+  border: 1px solid #eee;
+  border-radius: 6px;
+  margin-bottom: 6px;
+  cursor: pointer;
+}
+
+#map {
+  width: 100%;
+  height: 500px;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid #ddd;
+}
