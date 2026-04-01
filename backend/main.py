@@ -1,7 +1,19 @@
 from fastapi import FastAPI
 
-app = FastAPI(title="City Climate Explorer")
+from backend.core.config import settings
+from backend.core.database import Base, engine
+from backend.models.user import User
+from backend.routers import auth, health
+
+
+Base.metadata.create_all(bind=engine)
+
+app = FastAPI(title=settings.app_name)
+
+app.include_router(health.router)
+app.include_router(auth.router)
+
 
 @app.get("/")
-def root():
-    return {"message": "City Climate Explorer API"}
+def root() -> dict[str, str]:
+    return {"message": f"{settings.app_name} API"}
