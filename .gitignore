@@ -25,3 +25,6 @@ frontend/mapbox-token.local.js
 
 # Data/logs
 *.log
+
+# Personal references and notes
+References/
